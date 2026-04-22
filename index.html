@@ -83,7 +83,7 @@
         }
         .car-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
         }
         .car-card {
@@ -92,9 +92,9 @@
             overflow: hidden;
             box-shadow: 0 5px 15px rgba(0,0,0,0.08);
             transition: transform 0.3s ease;
-            display: flex; /* 차량 중앙 정렬을 위해 추가 */
+            display: flex;
             flex-direction: column;
-            align-items: center; /* 차량 중앙 정렬을 위해 추가 */
+            align-items: center;
         }
         .car-card:hover {
             transform: translateY(-10px);
@@ -102,24 +102,25 @@
         .car-card img {
             max-width: 100%;
             height: auto;
-            max-height: 250px; /* 기존보다 줄여서 컷아웃 이미지가 돋보이게 함 */
+            max-height: 220px;
             object-fit: contain;
-            margin-top: 1.5rem; /* 차량 위쪽에 여백을 주어 숨통을 틔움 */
+            margin-top: 1rem;
         }
         .car-info {
-            padding: 1.5rem;
+            padding: 1rem;
             text-align: center;
-            width: 100%; /* 중앙 정렬 레이아웃을 위해 중요 */
+            width: 100%;
+            border-top: 1px solid #ddd;
         }
         .car-info h3 {
             margin: 0 0 0.5rem 0;
             color: var(--primary-color);
-            font-size: 1.5rem;
+            font-size: 1.4rem;
         }
         .car-info p {
             margin: 0;
             color: #666;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
         }
         .contact-section {
             text-align: center;
@@ -195,7 +196,7 @@
             <div class="car-grid">
                 
                 <div class="car-card">
-                    <img src="BYD_vehicle_cutout.png" alt="BYD 취재차량 랩핑 디자인 (배경 제거)">
+                    <img src="byd.png" alt="BYD 취재차량 랩핑 디자인 (배경 제거)">
                     <div class="car-info">
                         <h3>BYD</h3>
                         <p>혁신적인 전기차 기술력을 경기도 전역에 알립니다.</p>
@@ -203,7 +204,7 @@
                 </div>
 
                 <div class="car-card">
-                    <img src="Mercedes_vehicle_cutout.png" alt="Mercedes-Benz 취재차량 랩핑 디자인 (배경 제거)">
+                    <img src="benz.png" alt="Mercedes-Benz 취재차량 랩핑 디자인 (배경 제거)">
                     <div class="car-info">
                         <h3>Mercedes-Benz</h3>
                         <p>프리미엄의 품격, 현장을 뛰는 언론의 신뢰와 만납니다.</p>
@@ -211,7 +212,7 @@
                 </div>
 
                 <div class="car-card">
-                    <img src="BMW_vehicle_cutout.png" alt="BMW 취재차량 랩핑 디자인 (배경 제거)">
+                    <img src="bmw.png" alt="BMW 취재차량 랩핑 디자인 (배경 제거)">
                     <div class="car-info">
                         <h3>BMW</h3>
                         <p>다이내믹한 드라이빙으로 가장 빠르게 소식을 전합니다.</p>
@@ -219,7 +220,7 @@
                 </div>
 
                 <div class="car-card">
-                    <img src="Porsche_vehicle_cutout.png" alt="Porsche 취재차량 랩핑 디자인 (배경 제거)">
+                    <img src="porsche.png" alt="Porsche 취재차량 랩핑 디자인 (배경 제거)">
                     <div class="car-info">
                         <h3>Porsche</h3>
                         <p>압도적인 퍼포먼스로 현장의 생동감을 담아냅니다.</p>
@@ -227,10 +228,18 @@
                 </div>
 
                 <div class="car-card">
-                    <img src="Tesla_vehicle_cutout.png" alt="Tesla 취재차량 랩핑 디자인 (배경 제거)">
+                    <img src="tesla.png" alt="Tesla 취재차량 랩핑 디자인 (배경 제거)">
                     <div class="car-info">
                         <h3>Tesla</h3>
                         <p>미래 지향적인 스마트 모빌리티와 디지털 혁신 언론의 결합.</p>
+                    </div>
+                </div>
+
+                <div class="car-card">
+                    <img src="genesis.png" alt="제네시스 취재차량 랩핑 디자인">
+                    <div class="car-info">
+                        <h3>제네시스</h3>
+                        <p>한국의 품격과 기술력, 경기도 전역에 소식을 전합니다.</p>
                     </div>
                 </div>
 
